@@ -55,11 +55,11 @@ while True:
             target_price = get_target_price("KRW-BTC", 0.5)
             ma15 = get_ma15("KRW-BTC")
             current_price = get_current_price("KRW-BTC")
-            """매수 목표가 이상인지와 이동평균선 이상인지 확인"""
-            if target_price < current_price and ma15 < current_price:
-                krw = get_balance("KRW")
-                if krw > 5000:
-                    upbit.buy_market_order("KRW-BTC", krw*0.9995)
+        #    """매수 목표가 이상인지와 이동평균선 이상인지 확인"""
+        #   if target_price < current_price and ma15 < current_price:
+        #        krw = get_balance("KRW")
+        #        if krw > 5000:
+        #           upbit.buy_market_order("KRW-BTC", krw*0.9995)
         else:
             btc = get_balance("BTC")
             if btc > 0.00008:
